@@ -1,19 +1,11 @@
-C Project - 2 - Library Management System
-
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-
 struct Book {
     char title[100];
     char author[100];
     int year;
 };
-
 
 void addBook(struct Book library[], int *numBooks) {
     if (*numBooks < 100) {
@@ -22,7 +14,6 @@ void addBook(struct Book library[], int *numBooks) {
         
         printf("Enter author name: ");
         scanf("%s", library[*numBooks].author);
-        
         printf("Enter publication year: ");
         scanf("%d", &library[*numBooks].year);
         
@@ -46,7 +37,6 @@ void displayBooks(struct Book library[], int numBooks) {
         printf("No books in the library.\n");
     }
 }
-
 
 void searchBook(struct Book library[], int numBooks, char title[]) {
     int found = 0;
@@ -104,6 +94,4 @@ int main() {
 
     return 0;
 }
-
--------------------------------------------------
 
