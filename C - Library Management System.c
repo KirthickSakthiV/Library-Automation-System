@@ -57,8 +57,8 @@ void searchBook(struct Book library[], int numBooks, char title[]) {
 }
 
 int main() {
-    struct Book library[100]; // Maximum 100 books in the library
-    int numBooks = 0; // Number of books currently in the library
+    struct Book library[100]; 
+    int numBooks = 0; 
 
     int choice;
     char searchTitle[100];
